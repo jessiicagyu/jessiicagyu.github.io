@@ -1,0 +1,118 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.3em;
+    color: #222;
+    background-color: #fafafa;
+    margin: auto;
+    padding: auto;
+    max-width: 50em;
+}
+
+aside {
+    background-color: #cbcefd;
+    padding: 1em 0.5em;
+}
+
+aside h2 {
+    font-size: large;
+}
+
+aside figure {
+    margin: 0.5em 0em;
+}
+
+figure {
+    margin-bottom: 1.5em;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #5d7b97;
+}
+
+nav {
+    margin: 1em 0em;
+    font-weight: bold;
+    padding-left: 0.3em;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    padding-top: 1em;
+    width: 6em;
+}
+
+h2 {
+    font-family: serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #5d7b97;
+    margin-bottom: 0.2em;
+    padding: 0em 0.3em;
+}
+
+section.main-story h2 {
+    font-size: 3em;
+}
+
+p {
+    font-family: sans-serif;
+    color: #222;
+    margin-bottom: 1em;
+    padding: 0.2em 0.3em;
+}
+
+figcaption {
+    font-style: italic;
+    padding: 0em 0.3em;
+    color: #6b6b6b
+}
+
+.tertiary-story {
+    border-top: 0.1em solid #5d7b97;
+    padding-top: 1em;
+}
+
+.tertiary-story h2 {
+    font-size: large;
+}
+
+footer {
+    background-color: #5d7b97;
+    height: 2em;
+    padding-top: 1em;
+}
+
+footer p {
+    color: #fafafa;
+}
+
+@media (min-width: 50em) {
+
+    li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    h2 {
+        padding: 0;
+
+    }
+
+    p {
+        padding: 0;
+    }
+
+}
