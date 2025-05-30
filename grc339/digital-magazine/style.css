@@ -181,12 +181,21 @@ div.newsletter {
 	flex: 0 0 8em;
 }
 
+.newsletter section {
+    background-color: #FFFFFF;
+    margin: 2em 0;
+    padding: 1em 1em 1.5em 1em;
+}
+
 .newsletter section.personal-info ul li {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0.8em 0;
+	margin: 0.5em 0;
 }
 
+.newsletter button {
+    margin: 2em 0;
+}
 
 
 @media (min-width: 50em) {
