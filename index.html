@@ -1,0 +1,185 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- You need this to proper scale in actual mobile devices.-->
+            <link rel="stylesheet" type="text/css" href="style.css"> <!-- Don’t forget to link to your CSS here. -->
+            <title>Roots</title> <!-- This will be replaced with the actual name of the publication later.  -->
+
+            <!-- Helpful meta tags to fight GitHub aggresive caching-->
+                <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+                <meta http-equiv="Pragma" content="no-cache" />
+                <meta http-equiv="Expires" content="0" />
+
+                <link rel="stylesheet" href="https://use.typekit.net/kwj6kjd.css">
+            
+        </head>	
+
+        <body>
+            <div class="home-container">
+
+                <!-- header is outside the main, but inside the div container. -->
+                 <header>
+                    <h1>
+                        <a href="index.html">
+                            <img src="roots-logo.png" alt="roots logo." class="logo">
+                        </a>
+    
+                    </h1>
+                
+                    <!-- For the nav, you can use the pound sign (#) for the value of the href attribute. -->
+                    <nav>
+                        <ul>
+                            <li><a href="photogallery.html">Gallery</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="#">Stories</a></li>
+                            <li><a href="newsletter.html">Subscribe to Our Newsletter</a></li>
+                        </ul>
+                    </nav>
+                 </header>
+
+                <main>
+                    <section class="main-story"><!-- Teaser for the main story. You want to give it a class.-->
+                        <a href="mainstory.html">
+                            <!-- Here, you’ll include an image in an img element, that will be inside a figure element. You don’t need a caption, but include an empty alt attribute. -->
+                            <figure>
+                                <img src="matcha.png" alt="person whisking matcha.">
+                            </figure>
+                            <!-- Include the heading (h2) and filler text (p) for the main story. -->
+                            <h2>Rooted and Rising</h2>
+                            <p>From lattes to skincare, matcha has taken over modern life. Its vibrant green hue and health claims have helped fuel its popularity, but behind the trend lies a centuries-old cultural practice rooted in ritual, mindfulness and tradition.</p>
+                        </a>    
+                    </section>
+                    
+                    <section class="secondary-story"> <!-- Teaser for a secondary story, with images. You want to give it a different class. -->
+                        <a href="#">
+                            <!-- Here, you’ll include an image in an img element, that will be inside a figure element. You don’t need a caption, but include an empty alt attribute. -->
+                            <figure>
+                                <img src="tteokguk.jpg" alt="a bowl of tteokguk with korean side dishes surrounding it.">
+                            </figure>
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>Bites of Luck</h2>
+                            <p>Lunar New Year means food, family, and tradition. Each dish tells a story and brings wishes for luck and health.</p>
+                        </a>
+                    </section>
+
+                    <section class="secondary-story"> <!-- Teaser for a secondary story, with images. You want to give it a different class. -->
+                        <a href="#">
+                            <!-- Here, you’ll include an image in an img element, that will be inside a figure element. You don’t need a caption, but include an empty alt attribute. -->
+                            <figure>
+                                <img src="dumplings.jpg" alt="a chef picking up a dumpling with chopsticks.">
+                            </figure>
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>From Taipei, With Love</h2>
+                            <p>Famous for its delicate soup dumplings and elegant approach to Taiwanese cuisine, Din Tai Fung has fully captured hearts worldwide.</p>
+                        </a>
+                    </section>
+
+                    <section class="secondary-story"> <!-- Teaser for a secondary story, with images. You want to give it a different class. -->
+                        <a href="#">
+                            <!-- Here, you’ll include an image in an img element, that will be inside a figure element. You don’t need a caption, but include an empty alt attribute. -->
+                            <figure>
+                                <img src="kimchi.jpg" alt="a small container of kimchi.">
+                            </figure>
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>Fermented Foundations</h2>
+                            <p>Where culture meets science—Asia’s fermented staples reflect deep-rooted traditions, bold flavors, and the art of preservation.</p>
+                        </a>
+                    </section>
+
+                    <section class="secondary-story"> <!-- Teaser for a secondary story, with images. You want to give it a different class. -->
+                        <a href="#">
+                            <!-- Here, you’ll include an image in an img element, that will be inside a figure element. You don’t need a caption, but include an empty alt attribute. -->
+                            <figure>
+                                <img src="bento.jpg" alt="japanese bento box.">
+                            </figure>
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>The Art of Bento</h2>
+                            <p>More than just a meal, Japan’s iconic lunchboxes showcase creativity, balance, and care in every little detail.</p>
+                        </a>
+                    </section>
+
+                    <section class="secondary-story"> <!-- Teaser for a secondary story, with images. You want to give it a different class. -->
+                        <a href="#">
+                            <!-- Here, you’ll include an image in an img element, that will be inside a figure element. You don’t need a caption, but include an empty alt attribute. -->
+                            <figure>
+                                <img src="noodles.jpg" alt="a bowl of noodles with veggies.">
+                            </figure>
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>Noodle Journeys</h2>
+                            <p>Travel across Asia through steaming bowls of ramen, pho, and laksa, with each dish telling its own story of place and tradition.</p>
+                        </a>
+                    </section>
+
+                </main>
+
+                <aside>
+                    <!-- You will need to replicate the section above to have a total of five secondary stories. Include their images and filler content. -->
+
+                    <section class="tertiary-story"> <!-- Teaser for a tertiary story, with no images. You want to give it a third class. -->
+                        <a href="#">
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>Night Market Whispers</h2>
+                            <p>Savor the sights, smells, and stories of Asia’s bustling night markets, where food, culture, and community come alive after dark.</p>
+                        </a>    
+                    </section>
+
+                    <section class="tertiary-story"> <!-- Teaser for a tertiary story, with no images. You want to give it a third class. -->
+                        <a href="#">
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>Beyond the Steam</h2>
+                            <p>Inside the world of dim sum lies a rich blend of artistry, tradition, and unspoken rules. From masterful chefs to nimble cart pushers, each role brings this beloved culinary experience to life.</p>
+                        </a>    
+                    </section>
+                    
+                    <section class="tertiary-story"> <!-- Teaser for a tertiary story, with no images. You want to give it a third class. -->
+                        <a href="#">
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>Spice Routes Reimagined</h2>
+                            <p>Discover how ancient trade shaped Asia’s diverse and distinctive flavors, blending ingredients and techniques across borders.</p>
+                        </a>    
+                    </section>
+
+                    <section class="tertiary-story"> <!-- Teaser for a tertiary story, with no images. You want to give it a third class. -->
+                        <a href="#">
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>Crispy Bites</h2>
+                            <p>Bold, crunchy, and packed with flavor—Taiwanese popcorn chicken is a night market favorite that’s easy to recreate at home.</p>
+                        </a>    
+                    </section>
+
+                    <section class="tertiary-story"> <!-- Teaser for a tertiary story, with no images. You want to give it a third class. -->
+                        <a href="#">
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>More Than a Staple</h2>
+                            <p>Rice is more than just food: it’s a symbol of heritage, resilience, and unity across Asia. From harvest rituals to family meals, this humble grain connects cultures and generations through shared tradition.</p>
+                        </a>    
+                    </section>
+                    
+                    <section class="tertiary-story"> <!-- Teaser for a tertiary story, with no images. You want to give it a third class. -->
+                        <a href="#">
+                            <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
+                            <h2>Sweet Traditions</h2>
+                            <p>From mochi to halo-halo, Asia’s desserts are rich with history, symbolism, and celebration. These sweets honor heritage and bring people together across generations.</p>
+                        </a>    
+                    </section>
+
+                    <!-- You will need to replicate the section above to have a total of six tertiary stories in your page, with at least 4 of them with images. -->
+                
+                </aside>
+                
+
+                <!-- footer is outside the main, but inside the div container. -->
+                <footer>
+                    <p> 
+                       All Rights Reserved.
+                    </p>
+                 </footer>
+                
+            </div>
+        </body>
+    </html>
+
+

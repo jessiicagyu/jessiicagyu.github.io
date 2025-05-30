@@ -1,0 +1,303 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+body {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.3em;
+    color: #222;
+    background-color: #F6F7F8;
+    margin: auto;
+    padding: auto;
+}
+
+div.container, div.home-container {
+    max-width: 40em;
+    margin: auto;
+}
+
+aside {
+    background-color: #F6F7F8;
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
+aside h2 {
+    font-size: 1.2em;
+}
+
+aside figure {
+    margin: 0em 0em 0.5em 0em;
+}
+
+figure {
+    margin-bottom: 1em;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #708B75;
+}
+
+nav {
+    margin: 1em 0em;
+    font-weight: 500;
+    padding-left: 0.3em;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    padding-top: 2em;
+    width: 8em;
+}
+
+h2 {
+    font-family: "instrument-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2em;
+    color: #485c4c;
+    margin-bottom: 0.2em;
+    padding: 0em 0.3em;
+    line-height: 1em;
+}
+
+section.main-story h2 {
+    font-size: 3em;
+}
+
+p {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #222;
+    padding: 0.2em 0.3em;
+    margin-bottom: 0.2em;
+}
+
+figcaption {
+    font-style: italic;
+    padding: 0em 0.3em;
+    color: #6b6b6b
+}
+
+.tertiary-story {
+    border-top: 1px solid #708B75;
+    padding-top: 1em;
+}
+
+.tertiary-story h2 {
+    font-size: 1.4em;
+}
+
+.tertiary-story p {
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #708B75;
+    height: 2em;
+    padding-top: 1em;
+}
+
+footer p {
+    color: #fafafa;
+}
+
+div.photo-gallery {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.photo-gallery main {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(66% + 5em);
+}
+
+.photo-gallery figure{
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.photo-gallery figcaption {
+    font-style: normal;
+    font-size: 1.2em;
+    margin: 1em 0;
+    color: #708B75;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+nav.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.2em;
+}
+
+.photo-gallery input {
+    display: none;
+}
+
+div.newsletter {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.newsletter h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 0.7em 0 0.5em 0;
+}
+
+.newsletter ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.newsletter ul li label {
+	flex: 0 0 8em;
+}
+
+.newsletter section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0.8em 0;
+}
+
+
+
+@media (min-width: 50em) {
+
+    li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    h2 {
+        padding: 0;
+
+    }
+
+    p {
+        padding: 0;
+    }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+    div.home-container {
+        max-width: 80em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    div.container {
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    header, footer {
+        grid-column: 1/3;
+    }
+
+    div.home-container main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    div.home-container aside {
+        background: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    div.container aside {
+        margin-top: 0;
+    }
+
+    section.main-story {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+    }
+
+    section.main-story a{
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.main-story a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    section.main-story a figure img {
+        object-fit: cover;
+    }
+
+    section.main-story a h2{
+        flex: 0 0 1em;
+    }
+
+    section.main-story a p {
+        flex: 0 0 4em;
+    }
+
+    section.secondary-story {
+        display: flex;
+    }
+
+    section.secondary-story a{
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.secondary-story a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    section.secondary-story a figure img {
+        object-fit: cover;
+    }
+
+    section.secondary-story a h2{
+        flex: 0 0 1em;
+    }
+
+    section.secondary-story a p {
+        flex: 0 0 4em;
+    }
+}
