@@ -1,0 +1,104 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- You need this to proper scale in actual mobile devices.-->
+            <link rel="stylesheet" type="text/css" href="style.css"> <!-- Don’t forget to link to your CSS here. -->
+            <title>Jessica Yu</title> <!-- This will be replaced with the actual name of the publication later.  -->
+
+            <!-- Helpful meta tags to fight GitHub aggresive caching-->
+                <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+                <meta http-equiv="Pragma" content="no-cache" />
+                <meta http-equiv="Expires" content="0" />
+
+                <link rel="stylesheet" href="https://use.typekit.net/kwj6kjd.css">
+            
+        </head>	
+
+        <body>
+            <div class="newsletter">
+                
+                <!-- Same header as the home page. -->
+
+                <header>
+                    <h1>
+                        <a href="index.html">
+                            <img src="roots-logo.png" alt="roots logo." class="logo">
+                        </a>
+    
+                    </h1>
+                
+                    <!-- For the nav, you can use the pound sign (#) for the value of the href attribute. -->
+                    <nav>
+                        <ul>
+                            <li><a href="photogallery.html">Gallery</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="#">Stories</a></li>
+                            <li><a href="newsletter.html">Subscribe to Our Newsletter</a></li>
+                        </ul>
+                    </nav>
+
+                    <h2>
+                        Join Our Newsletter
+                    </h2>
+
+            </header>
+
+            <form>
+                <section class="personal-info">
+                    <h3>Your Details</h3>
+                    <ul>
+                        <li><label for="name">Name:</label> <input type="text" name="name" id="name" placeholder="your full name" /></li>
+                        <li><label for="email">Email:</label> <input type="email" name="email" id="email" placeholder="your email" /></li>
+                        <li><label for="phone">Phone:</label> <input type="tel" name="phone" id="phone" placeholder="your phone number" /></li>
+                    </ul>
+                </section>
+
+                <section class="interests">
+                    <h3>Your Interests</h3>
+                    <ul>
+                        <li><input type="checkbox" id="food" value="food" /> <label for="food">Food</label></li>
+                        <li><input type="checkbox" id="drinks" value="drinks" /> <label for="drinks">Drinks</label></li>
+                        <li><input type="checkbox" id="dessert" value="dessert" /> <label for="dessert">Desserts</label></li>
+                        <li><input type="checkbox" id="restaurants" value="restaurants" /> <label for="restaurants">Restaurants</label></li>
+                        <li><input type="checkbox" id="cafes" value="cafes" /> <label for="cafes">Cafes</label></li>
+                        <li><input type="checkbox" id="recipes" value="recipes" /> <label for="recipes">Recipes</label></li>
+                    </ul>
+                </section>
+
+                <section class="frequency">
+                    <h3>Frequency</h3>
+                    <ul>
+                        <li>
+                            <label for="frequency">Receive emails every:</label>
+                            <select id="frequency" name="frequency">
+                                <option value=""></option>
+                                <option value="Monthly">Month</option>
+                                <option value="Quarterly">Quarter</option>
+                                <option value="Yearly">Year</option>
+                            </select>
+                        </li>
+                    </ul>
+                </section>
+
+            </form>
+
+            <img src="newsletter-matcha.jpg" alt="A cup of matcha next to a napkin that says 'I love you so matcha'." class="newsletter-photo">
+
+                
+
+               <!-- Same footer as home page. -->
+
+               <footer>
+                <p> 
+                   All Rights Reserved.
+                </p>
+             </footer>
+
+            </div>
+        </body>
+    </html>
+
+
