@@ -56,7 +56,7 @@ li {
 }
 
 h1 {
-    padding-top: 2em;
+    margin-top: 2em;
     width: 8em;
 }
 
@@ -309,4 +309,38 @@ div.newsletter {
     section.secondary-story a p {
         flex: 0 0 4em;
     }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #161616;
+    }
+
+    h3, p, a {
+        color: #efefef;
+    }
+
+    h2 {
+        color: #aec5b1;
+    }
+
+    h1 {  
+        background-image: url("roots-logo-light.png");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+    }  
+
+    h1 img {  
+        opacity: 0;  
+    } 
+
+    footer {
+        background-color: #304231;
+    }
+
+    section {
+        background-color: #304231
+    }
+
 }
